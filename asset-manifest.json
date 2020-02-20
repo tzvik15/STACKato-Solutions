@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio-2/static/css/main.14a7ff08.chunk.css",
+    "main.js": "/React-Portfolio-2/static/js/main.f8a38883.chunk.js",
+    "main.js.map": "/React-Portfolio-2/static/js/main.f8a38883.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio-2/static/js/runtime-main.e9e7fc40.js",
+    "runtime-main.js.map": "/React-Portfolio-2/static/js/runtime-main.e9e7fc40.js.map",
+    "static/js/2.b6f9d277.chunk.js": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js",
+    "static/js/2.b6f9d277.chunk.js.map": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js.map",
+    "index.html": "/React-Portfolio-2/index.html",
+    "precache-manifest.a2543cba6ae00ada72fba3232b0f963f.js": "/React-Portfolio-2/precache-manifest.a2543cba6ae00ada72fba3232b0f963f.js",
+    "service-worker.js": "/React-Portfolio-2/service-worker.js",
+    "static/css/main.14a7ff08.chunk.css.map": "/React-Portfolio-2/static/css/main.14a7ff08.chunk.css.map",
+    "static/js/2.b6f9d277.chunk.js.LICENSE.txt": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js.LICENSE.txt",
+    "static/media/BurgerFull.jpg": "/React-Portfolio-2/static/media/BurgerFull.195d1284.jpg",
+    "static/media/bassoon2.jpg": "/React-Portfolio-2/static/media/bassoon2.fdf27f87.jpg",
+    "static/media/bonez2.jpg": "/React-Portfolio-2/static/media/bonez2.1f2fea15.jpg",
+    "static/media/bonezfull.jpg": "/React-Portfolio-2/static/media/bonezfull.c988c17a.jpg",
+    "static/media/flintzFull.jpg": "/React-Portfolio-2/static/media/flintzFull.dfa1f039.jpg",
+    "static/media/god.jpg": "/React-Portfolio-2/static/media/god.9b0f8cb0.jpg",
+    "static/media/good.jpg": "/React-Portfolio-2/static/media/good.9092b4da.jpg",
+    "static/media/logo.svg": "/React-Portfolio-2/static/media/logo.5d5d9eef.svg",
+    "static/media/python.jpg": "/React-Portfolio-2/static/media/python.3c0a9f3d.jpg",
+    "static/media/restFull.jpg": "/React-Portfolio-2/static/media/restFull.705a9e56.jpg",
+    "static/media/App.css": "/React-Portfolio-2/static/media/symphony.fcb1692c.png",
+    "static/media/weatherFull.jpg": "/React-Portfolio-2/static/media/weatherFull.fc11a526.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9e7fc40.js",
+    "static/js/2.b6f9d277.chunk.js",
+    "static/css/main.14a7ff08.chunk.css",
+    "static/js/main.f8a38883.chunk.js"
+  ]
+}
