@@ -1,0 +1,133 @@
+.head {
+  border-bottom-style: solid;
+  border-color: #cccccc;
+  border-width: 2px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 8px;
+  position: absolute;
+  top: 0;
+}
+#title {
+  background-color: #883043;
+  display: inline;
+  padding: 5px;
+  padding-top: 8px;
+}
+#subtitle {
+  color: #aa9e9e;
+  display: inline;
+  font-family: "Arizonia";
+}
+.navigation {
+  background-color: #ffffff;
+  color: #aa9e9e;
+  display: inline;
+  padding-top: 20px;
+  margin-left: 285px;
+}
+a:link {
+  text-decoration: none;
+  color: #777777;
+}
+a:visited {
+  text-decoration: none;
+  color: #777777;
+}
+a:hover {
+  background-color: #883043;
+  color: white;
+}
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  #title {
+    position: static;
+    float: left;
+    display: block;
+  }
+  #subtitle {
+    text-align: left;
+    margin-top: 30px;
+    position: static;
+    left: 0;
+    display: block;
+    float: left;
+  }
+  .navigation {
+    min-width: 100%;
+    margin-left: 10px;
+    padding-top: 5px;
+    margin-top: 40px;
+    position: static;
+    left: 0;
+    display: block;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  #title {
+    position: static;
+    left: 0;
+    display: block;
+    margin-left: -300px;
+    padding-left: 20px;
+  }
+  #subtitle {
+    text-align: left;
+    margin-bottom: 5px;
+    position: static;
+    left: 1;
+    display: block;
+    float: left;
+    margin-top: -75px;
+    margin-left: 310px;
+    padding-bottom: 55px;
+    padding-top: 15px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  .navigation {
+    min-width: 100%;
+    margin-left: 0px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: static;
+    left: 0;
+    display: block;
+    margin-top: -40px;
+    text-align: center;
+    float: left;
+  }
+}
+@media screen and (max-width: 640px) {
+  #title {
+    position: static;
+    left: 0;
+    display: block;
+    margin-bottom: 100px;
+  }
+  #subtitle {
+    text-align: left;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    display: block;
+  }
+  .navigation {
+    min-width: 100%;
+    margin-left: 0px;
+    text-align: left;
+    padding-top: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    display: block;
+  }
+}
