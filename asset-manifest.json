@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/React-Portfolio-2/static/css/main.14a7ff08.chunk.css",
-    "main.js": "/React-Portfolio-2/static/js/main.f8a38883.chunk.js",
-    "main.js.map": "/React-Portfolio-2/static/js/main.f8a38883.chunk.js.map",
+    "main.js": "/React-Portfolio-2/static/js/main.4a7ce89d.chunk.js",
+    "main.js.map": "/React-Portfolio-2/static/js/main.4a7ce89d.chunk.js.map",
     "runtime-main.js": "/React-Portfolio-2/static/js/runtime-main.e9e7fc40.js",
     "runtime-main.js.map": "/React-Portfolio-2/static/js/runtime-main.e9e7fc40.js.map",
-    "static/js/2.b6f9d277.chunk.js": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js",
-    "static/js/2.b6f9d277.chunk.js.map": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js.map",
+    "static/js/2.e97caa37.chunk.js": "/React-Portfolio-2/static/js/2.e97caa37.chunk.js",
+    "static/js/2.e97caa37.chunk.js.map": "/React-Portfolio-2/static/js/2.e97caa37.chunk.js.map",
     "index.html": "/React-Portfolio-2/index.html",
-    "precache-manifest.a2543cba6ae00ada72fba3232b0f963f.js": "/React-Portfolio-2/precache-manifest.a2543cba6ae00ada72fba3232b0f963f.js",
+    "precache-manifest.da71890958f326d4e83a2a890a396c70.js": "/React-Portfolio-2/precache-manifest.da71890958f326d4e83a2a890a396c70.js",
     "service-worker.js": "/React-Portfolio-2/service-worker.js",
     "static/css/main.14a7ff08.chunk.css.map": "/React-Portfolio-2/static/css/main.14a7ff08.chunk.css.map",
-    "static/js/2.b6f9d277.chunk.js.LICENSE.txt": "/React-Portfolio-2/static/js/2.b6f9d277.chunk.js.LICENSE.txt",
+    "static/js/2.e97caa37.chunk.js.LICENSE.txt": "/React-Portfolio-2/static/js/2.e97caa37.chunk.js.LICENSE.txt",
     "static/media/BurgerFull.jpg": "/React-Portfolio-2/static/media/BurgerFull.195d1284.jpg",
+    "static/media/Coding Resume.pdf": "/React-Portfolio-2/static/media/Coding Resume.5248317e.pdf",
     "static/media/bassoon2.jpg": "/React-Portfolio-2/static/media/bassoon2.fdf27f87.jpg",
     "static/media/bonez2.jpg": "/React-Portfolio-2/static/media/bonez2.1f2fea15.jpg",
     "static/media/bonezfull.jpg": "/React-Portfolio-2/static/media/bonezfull.c988c17a.jpg",
@@ -27,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e9e7fc40.js",
-    "static/js/2.b6f9d277.chunk.js",
+    "static/js/2.e97caa37.chunk.js",
     "static/css/main.14a7ff08.chunk.css",
-    "static/js/main.f8a38883.chunk.js"
+    "static/js/main.4a7ce89d.chunk.js"
   ]
 }
