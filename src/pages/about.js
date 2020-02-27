@@ -2,6 +2,7 @@ import React from "react";
 import good from "../assets/pics/good.jpg";
 import logo from "../logo.svg";
 import resume from "../assets/docs/Coding Resume.pdf"
+import { Link } from "react-router-dom";
 
 function About() {
     function modeFun1() {
@@ -69,7 +70,7 @@ function About() {
             be seen in my "Bone'z Beatz" project, where I used JS to connect
             dynamically between sound files and key strokes, creating a fully
             custumizable soundboard application. (more about this project{" "}
-            <a href="/bonez">HERE</a>)
+            <Link to="/bonez">HERE</Link>)
           </p>
           <p className="break" id="pSix">
             As my client, I will work together with you, collaborating to
@@ -79,7 +80,7 @@ function About() {
           </p>
           <p className="break" id="pSeven">
             You can see examples of my projects in the{" "}
-            <a href="/portfolio">PORTFOLIO</a> section.{" "}
+            <Link to="/portfolio">PORTFOLIO</Link> section.{" "}
             <a
               href="https://github.com/tzvik15"
               target="_blank"
@@ -131,7 +132,7 @@ function About() {
               </p>
               <p>
                 To see these skills in use, please click{" "}
-                <a href="/portfolio">HERE</a>.
+                <Link to="/portfolio">HERE</Link>.
               </p>
                
             </div>
