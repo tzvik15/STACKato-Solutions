@@ -13,6 +13,10 @@ import Flintz from "./pages/flintz";
 import Python from "./pages/python";
 import Rest from "./pages/rest";
 import Weather from "./pages/weather";
+import Theory from "./pages/Theory";
+import Keys from "./pages/Keys";
+import LearnKeys from "./componants/theory/keys/learn/Learn"
+import PlayKeys from "./componants/theory/keys/play/Play"
 
 function App() {
   return (
@@ -34,6 +38,10 @@ function App() {
           <Route exact path="/python" component={Python} />
           <Route exact path="/rest" component={Rest} />
           <Route exact path="/weather" component={Weather} />
+          <Route exact path="/Theory" component={Theory} />
+          <Route exact path="/Theory/keys" component={Keys} />
+          <Route exact path="/Theory/keys/learn" component={LearnKeys} />
+		 	    <Route exact path="/Theory/keys/play" component={PlayKeys} />
         </body>
       
     </Router>

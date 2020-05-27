@@ -21,16 +21,15 @@
     transform: rotate(360deg);
   }
 }
-.body {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+body{
+  background-image: none;
 }
 .body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
+
 .head {
   border-bottom-style: solid;
   border-color: #cccccc;
@@ -322,6 +321,7 @@ hr {
 #btn2 {
   padding-left: 32px;
   padding-right: 32px;
+  top:-2px
 }
 
 #btn3 {
@@ -331,7 +331,7 @@ hr {
 #btn5 {
   position: absolute;
   left: 20px;
-  top: 0px;
+  top: -2px;
   padding-left: 59px;
   padding-right: 59px;
   font-size: 16px;

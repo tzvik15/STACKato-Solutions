@@ -1,0 +1,22 @@
+.ansBut{
+    margin-left: 10px;
+    margin-right: 10px;
+      font-size: 36px;
+      font-family: 'Gotu', sans-serif;
+      border: 5px solid whitesmoke;
+      background-image: linear-gradient(to left, rgb(241, 28, 241), rgb(197, 39, 245), rgb(95, 209, 230), rgb(11, 184, 11), yellow, orange, red);  
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      box-shadow: 5px  rgb(161, 34, 161);
+      text-align: center;
+      border-radius: 12px;
+}
+
+.head{
+    font-family: 'Gotu', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+}

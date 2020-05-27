@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    background-image: url('../assets/start3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-size: inherit; */
+    background-size: 1600px 770px;
+    /* min-width: 100%;
+    min-height: 100%; */
+    text-align: center;
+  }
+
+.hAndW{
+    padding-left:100px;
+    font-size: 59px;
+    font-family: 'Gotu', sans-serif;
+    background-image: linear-gradient(to left, rgb(241, 28, 241), rgb(197, 39, 245), rgb(95, 209, 230), rgb(11, 184, 11), yellow, orange, red);    
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn{
+    margin-left: 45px;
+    font-size: 36px;
+    font-family: 'Gotu', sans-serif;
+    background-image: linear-gradient(to left, rgb(241, 28, 241), rgb(197, 39, 245), rgb(95, 209, 230), rgb(11, 184, 11), yellow, orange, red);    
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    box-shadow: 10px whitesmoke;
+    border-radius: 12px;
+    border: 5px solid whitesmoke;
+    border-radius: 12px;
+}
+
+.btnP{
+    font-size: 36px;
+    font-family: 'Gotu', sans-serif; 
+    margin-left: 30px;
+}
+
+.p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    text-align: center;
+    padding-left: 215px;
+    padding-right: 200px;
+    color: whitesmoke;
+}

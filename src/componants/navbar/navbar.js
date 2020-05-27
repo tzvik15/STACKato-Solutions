@@ -13,6 +13,8 @@ function Navbar() {
         <Link to="/contact">Contact</Link>
         <span> |</span>
         <Link to="/portfolio">Portfolio</Link>
+        <span> |</span>
+        <Link to="/Theory">Music Theory Games</Link>
       </nav>
     </header>
   );
