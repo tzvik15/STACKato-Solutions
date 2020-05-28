@@ -4,7 +4,7 @@ import Relative from "../relative/Relative"
 import Sharps from "../sharps/Sharps"
 import Flats from "../flats/Flats"
 import Quiz from "../quiz/Quiz"
-// import "../play/play.css"
+ import "../play/play.css"
 
 function Play() {
 

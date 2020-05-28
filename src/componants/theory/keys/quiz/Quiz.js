@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
-// import "./quiz.css";
+ import "./quiz.css";
 
 function Quiz() {
   const [play, setPlay] = useState({

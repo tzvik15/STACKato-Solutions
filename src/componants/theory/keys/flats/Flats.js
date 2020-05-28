@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
-// import "../flats/flats.css"
+ import "../flats/flats.css"
 
 function Flats() {
   const scales = [

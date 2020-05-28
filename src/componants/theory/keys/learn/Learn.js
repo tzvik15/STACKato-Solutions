@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-// import "../learn/learn.css"
+ import "../learn/learn.css"
 import { Link } from "react-router-dom";
 
 
@@ -66,26 +66,32 @@ function log() {
         
         state.q1===false ? 
         <>
-        <h3 className ="head">This step by step guide will help you find the key signature to any scale by following a simple, step-by-step series of questions, with minimal need for memorization!</h3>
-        <h2 className ="head">Question 1</h2>
+        <h3 className ="headTest">This step by step guide will help you find the key signature to any scale by following a simple, step-by-step series of questions, with minimal need for memorization!</h3>
+        <div className="q1Div">
+        <h2 className ="headQuest">Question 1</h2>
         <p className ="text">Is it a Major key or Minor key?</p>
-        <button className= "ansBut" onClick={major}>Major</button>
-        <button className= "ansBut" onClick={minor}>Minor</button>
+        <button className= "ans1But" onClick={major}>Major</button>
+        <button className= "ans1But" onClick={minor}>Minor</button>
+        </div>
         </>
 
         : 
         state.q1===true && state.major===true && state.q2===false?
         <>
-        <h3 className ="head">Now that we have a major scale, it's time to ask ourselves the 2nd question: is it C major or F major?</h3>
-        <button className= "ansBut" onClick={cOrF}>Yes</button>
-        <button className= "ansBut" onClick={q2f}>No</button>
+        <div className="q2Div">
+        <h3 className ="headTest">Now that we have a major scale, it's time to ask ourselves the 2nd question: is it C major or F major?</h3>
+        <button className= "ans1But" onClick={cOrF}>Yes</button>
+        <button className= "ans1But" onClick={q2f}>No</button>
+        </div>
         </>
         :
         state.q1===true && state.q2===true && state.isCorF===true?
         <>
+<div className="cfDiv">
         <p className ="text">C and F major are the only two scales that we need to memorize the key signature for. C major has NO key signature (no sharps and no flats), and F major only has Bb in its key signature.</p>
-        <h4>Once you are done memorizing, click the button!</h4>
-        <button className= "ansBut" onClick={reset}><Link to="/">DONE!</Link></button>
+        <h4 className ="headTest">Once you are done memorizing, click the button!</h4>
+        <button className= "ans1But" onClick={reset}><Link to="/">DONE!</Link></button>
+</div>
         </>
         :
         state.q1===true && state.q2===true && state.isCorF===false && state.q3===false?

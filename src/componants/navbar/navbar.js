@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="head">
+    <header className="headNav">
       <h1 id="title">Daniel Nester,</h1>
       <h1 id="subtitle">STACKato Solutions</h1>
       <nav className="navigation">

@@ -1,14 +1,26 @@
-.head{
+.headTest{
+    font-family: 'Gotu', sans-serif;
+    font-size: large;
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 100px;
+}
+
+.headQuest{
     font-family: 'Gotu', sans-serif;
     text-align: center;
     color: whitesmoke;
+    /* margin-top: 100px; */
 }
 
-.ansBut{
+
+.ans1But{
       margin-left: 10px;
       margin-right: 10px;
         font-size: 36px;
         font-family: 'Gotu', sans-serif;
+        max-width: 150px;
+        
         border: 5px solid whitesmoke;
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);    
         color: transparent;
@@ -18,6 +30,24 @@
         box-shadow: 5px  rgb(161, 34, 161);
         text-align: center;
         border-radius: 12px;
+}
+
+.q1Div{
+    position: absolute;
+    top:200px;
+    left:40%;
+}
+
+.q2Div{
+    position: absolute;
+    top:200px;
+    left:20%;
+}
+
+.cfDiv{
+    position: absolute;
+    top:100px;
+    /* left:10%; */
 }
 
 .text{
