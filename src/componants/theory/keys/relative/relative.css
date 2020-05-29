@@ -9,6 +9,8 @@
       margin-right: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
+      max-width: 100px;
+      float: left;
         font-size: 15px;
         font-family: 'Gotu', sans-serif;
         border: 3px solid whitesmoke;
@@ -41,4 +43,21 @@
     border: 5px solid whitesmoke;
     border-radius: 12px;
     text-align: center;
+}
+
+.readyDiv{
+    position: absolute;
+    top:200px;
+    left:40%;
+}
+
+.questionDiv{
+    position: absolute;
+    top:100px;
+}
+
+.tallyDiv{
+    position: absolute;
+    top:500px;
+    left:45%;
 }

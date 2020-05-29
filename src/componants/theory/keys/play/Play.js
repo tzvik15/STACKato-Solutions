@@ -43,11 +43,13 @@ function Play() {
     return (
         choiceState.choice===false?
         <>
-        <p className ="head">Welcome to the play section of this app! Here you will have the opportunity to test your abilities and the things you have learned! You can practice specific topics, or try the "quiz yourself" section that includes all kinds of questions!</p>
-        <button  className= "ansBut" onClick={relative}>Relative Keys</button>
-        <button className= "ansBut" onClick={sharps}>Sharp Keys</button>
-        <button className= "ansBut" onClick={flats}>Flat Keys</button>
-        <button className= "ansBut" onClick={quiz}>Quiz Yourself!</button>
+        <p className ="headTest">Welcome to the play section of this app! Here you will have the opportunity to test your abilities and the things you have learned! You can practice specific topics, or try the "quiz yourself" section that includes all kinds of questions!</p>
+        <div className="choicePlayDiv">
+        <button  className= "ans1But" onClick={relative}>Relative Keys</button>
+        <button className= "ans1But" onClick={sharps}>Sharp Keys</button>
+        <button className= "ans1But" onClick={flats}>Flat Keys</button>
+        <button className= "ans1But" onClick={quiz}>Quiz Yourself!</button>
+        </div>
         </>
         :
         choiceState.choice===true && choiceState.rk===true?
@@ -64,7 +66,7 @@ function Play() {
         :
         <>
         <p>Click the button to return to the main menu.</p>
-        <button className= "ansBut" onClick={reset}><Link to="/">HOME</Link></button>
+        <button className= "ans1But" onClick={reset}><Link to="/Theory">HOME</Link></button>
         </>
     )
 }

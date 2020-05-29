@@ -11,7 +11,7 @@ function Quiz() {
   });
 
   const [timer, setTimer] = useState({
-    num: 30
+    num: 60
   });
 
   const [count, setCount] = useState({
@@ -90,7 +90,6 @@ function Quiz() {
   };
 
   const selected = event => {
-    // console.log(event.target.attributes[0].value)
     if (event.target.attributes[0].value === correct) {
       coAn();
       random();
@@ -197,24 +196,24 @@ function Quiz() {
 
   return play.start === false ? (
     <>
-      <p className ="head">
+      <p className ="headTest">
         In this section you will be presented with a name of a scale, and you
-        have to pick its key signature. You will have 30 seconds to correctly
+        have to pick its key signature. You will have one minute to correctly
         name as many scales as you can! When you are ready to start the clock,
         click the button!
       </p>
-      <button className= "ready" onClick={start}>READY!</button>
+      <button className= "ans1But" id="quizRdy" onClick={start}>READY!</button>
     </>
   ) : play.start === true && timer.num > 0 ? (
     <>
       <div>
-        <h2 className ="head">Time Left: {timer.num} seconds</h2>
+        <h2 className ="headTest">Time Left: {timer.num} seconds</h2>
       </div>
-      <div>
+      <div className="quiz">
         <p className="text">
           What is the key signature of the following scale?
         </p>
-        <h3 className="head">{rand}</h3>
+        <h3 className="headTest">{rand}</h3>
         <button id="btn0" onClick={selected}></button>
         <button id="btn1s" onClick={selected}></button>
         <button id="btn2s" onClick={selected}></button>
@@ -232,13 +231,13 @@ function Quiz() {
         <button id="btn7f" onClick={selected}></button>
       </div>
       <button className="home">
-        <Link to="/">HOME</Link>
+        <Link to="/Theory/keys">HOME</Link>
       </button>
     </>
   ) : (
     <>
-      <h2 className ="head" >TIME'S UP!</h2>
-      <div>
+      <h2 className ="headTest" >TIME'S UP!</h2>
+      <div className="tallyDiv">
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
       </div>

@@ -192,3 +192,14 @@
     height: 105px;
     background-size: cover;
 }
+
+#quizRdy{
+    position: absolute;
+    top:200px;
+    left:45%;
+}
+
+.quiz{
+    position: absolute;
+    top:150px;
+}

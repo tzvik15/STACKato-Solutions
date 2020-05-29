@@ -1,6 +1,5 @@
 import React from "react";
 import good from "../assets/pics/good.jpg";
-import logo from "../logo.svg";
 import resume from "../assets/docs/Coding Resume.pdf"
 import { Link } from "react-router-dom";
 
@@ -112,7 +111,6 @@ function About() {
               HERE.
             </a>
           </p>
-          <img src={logo} className="App-logo" alt="logo" />
           <div id="tModal" className="modal">
             <div className="modal-content">
               <span className="close-btn">&times;</span>

@@ -150,23 +150,26 @@ function Relative() {
 
         play.start===false?
         <>
-        <p className ="head">In this section you will be given a random scale name, and you will need to select the relative minor/major</p>
-        <button className= "ansBut" onClick={start}>READY!</button>
+        <p className ="headTest">In this section you will be given a random scale name, and you will need to select the relative minor/major</p>
+        <dic className="readyDiv">
+        <button className= "ans1But" onClick={start}>READY!</button>
+        </dic>
         </>
         :
         <>
+        <div className="questionDiv">
         <p className ="text">What is the relative scale of the following scale?</p>
         
-        <h3 className ="head">{rand}</h3>
+        <h3 className ="headTest">{rand}</h3>
         {scales.sort().map((item) => (
             <button  className= "ansBut1" onClick={selected}>{item }</button>
         ))}
-
-        <div>
+</div>
+        <div className="tallyDiv">
             <h1 className ="text">Correct Answers: {count.yes}</h1>
             <h1 className ="text">Incorrect Answers: {count.no}</h1>
         </div>
-        <button  className= "home" ><Link to="/">HOME</Link></button>
+        <button  className= "home" ><Link to="/Theory/keys">HOME</Link></button>
         </>
     )
 }

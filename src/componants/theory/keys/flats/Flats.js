@@ -122,16 +122,19 @@ function Flats() {
 
   return play.start === false ? (
     <>
-      <p className ="head">
+      <p className ="headTest">
         In this section you will be presented with a name of a scale, and you
         have to pick how many flats it has.
       </p>
-      <button className= "ansBut" onClick={start}>READY!</button>
+      <button className= "ans1But" id="flatRdy" onClick={start}>READY!</button>
     </>
   ) : (
     <>
+<div className="questDiv">
       <p className ="text" >How many flats does the following scale have?</p>
-      <h3 className ="head">{rand}</h3>
+      <h3 className ="headTest">{rand}</h3>
+</div>
+<div className="numBtnDiv">
       <button className= "ansBut2" onClick={selected}>0</button>
       <button  className= "ansBut2" onClick={selected}>1</button>
       <button className= "ansBut2" onClick={selected}>2</button>
@@ -140,13 +143,13 @@ function Flats() {
       <button  className= "ansBut2" onClick={selected}>5</button>
       <button className= "ansBut2" onClick={selected}>6</button>
       <button className= "ansBut2" onClick={selected}>7</button>
-
-      <div>
+</div>
+      <div className="tallyDiv">
         <h1 className ="text" >Correct Answers: {count.yes}</h1>
         <h1 className ="text">Incorrect Answers: {count.no}</h1>
       </div>
       <button className= "home">
-        <Link  to="/">HOME</Link>
+        <Link  to="/Theory/keys">HOME</Link>
       </button>
     </>
   );

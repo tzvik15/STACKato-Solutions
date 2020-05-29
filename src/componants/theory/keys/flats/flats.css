@@ -37,3 +37,9 @@
     border-radius: 12px;
     text-align: center;
 }
+
+#flatRdy{
+    position: absolute;
+    top:200px;
+    left:45%;
+}
