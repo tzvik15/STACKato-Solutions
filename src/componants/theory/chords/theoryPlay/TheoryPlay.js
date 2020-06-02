@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import "./theoryPlay.css";
+// import "./theoryPlay.css";
 import Build from "../build/Build"
 import Recognize from "../recognize/Recognize"
 

@@ -1,19 +1,19 @@
 import React, {useState} from "react";
-import "./triads.css";
+// import "./triads.css";
 import {Link} from "react-router-dom";
 
-import M from "../../assets/images/M.jpg";
-import M6 from "../../assets/images/M6.jpg";
-import M46 from "../../assets/images/M46.jpg";
-import Min from "../../assets/images/Min.jpg";
-import Min6 from "../../assets/images/Min6.jpg";
-import Min46 from "../../assets/images/Min46.jpg";
-import Dim from "../../assets/images/Dim.jpg";
-import Dim6 from "../../assets/images/Dim6.jpg";
-import Dim46 from "../../assets/images/Dim46.jpg";
-import Aug from "../../assets/images/Aug.jpg";
-import Aug6 from "../../assets/images/Aug6.jpg";
-import Aug46 from "../../assets/images/Aug46.jpg";
+import M from "../assets/images/M.jpg";
+import M6 from "../assets/images/M6.jpg";
+import M46 from "../assets/images/M46.jpg";
+import Min from "../assets/images/Min.jpg";
+import Min6 from "../assets/images/Min6.jpg";
+import Min46 from "../assets/images/Min46.jpg";
+import Dim from "../assets/images/Dim.jpg";
+import Dim6 from "../assets/images/Dim6.jpg";
+import Dim46 from "../assets/images/Dim46.jpg";
+import Aug from "../assets/images/Aug.jpg";
+import Aug6 from "../assets/images/Aug6.jpg";
+import Aug46 from "../assets/images/Aug46.jpg";
 
 const Triads =()=>{
 

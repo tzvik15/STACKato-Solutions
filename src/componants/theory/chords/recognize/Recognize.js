@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import "./recognize.css";
+// import "./recognize.css";
 import Triads from "../triads/Triads";
 import Septachords from "../septachords/Septachords";
 

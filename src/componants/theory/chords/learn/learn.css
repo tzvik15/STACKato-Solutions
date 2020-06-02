@@ -1,9 +1,9 @@
-.numberPic {
+.numberPicL {
     max-width: 30px;
     max-height: 30px;
 }
 
-.info {
+.infoL {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 35px;
     color: white;
@@ -18,7 +18,7 @@
 	-webkit-text-stroke-color: rgb(241, 22, 168);
     
 }
-.title{
+.titleL{
     color: rgb(2, 2, 2);
 	font-size: 40px;
 	-webkit-text-stroke-width: 2.5px;

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import "./play.css";
+// import "./play.css";
 import SoundPlay from "../soundPlay/SoundPlay";
 import TheoryPlay from "../theoryPlay/TheoryPlay";
 

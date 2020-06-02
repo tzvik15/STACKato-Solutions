@@ -17,6 +17,9 @@ import Theory from "./pages/Theory";
 import Keys from "./pages/Keys";
 import LearnKeys from "./componants/theory/keys/learn/Learn"
 import PlayKeys from "./componants/theory/keys/play/Play"
+import Chords from "./pages/Chords";
+import LearnChords from "./componants/theory/chords/learn/Learn"
+import PlayChords from "./componants/theory/chords/play/Play"
 
 function App() {
   return (
@@ -42,6 +45,9 @@ function App() {
           <Route exact path="/Theory/keys" component={Keys} />
           <Route exact path="/Theory/keys/learn" component={LearnKeys} />
 		 	    <Route exact path="/Theory/keys/play" component={PlayKeys} />
+           <Route exact path="/Theory/chords" component={Chords} />
+          <Route exact path="/Theory/chords/learn" component={LearnChords} />
+		 	    <Route exact path="/Theory/chords/play" component={PlayChords} />
         </body>
       
     </Router>
