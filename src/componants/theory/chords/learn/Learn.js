@@ -119,20 +119,26 @@ const Learn =()=> {
       
         buttons.q1===false?
         <>
-        <p className ="infoL" >
+        <p className ="infoL" id="l1">
             Chords are groups of 3 or more notes appearing simultaneously, or one after the other. When the notes appear melodically (one after the other), we call it an "arppegio". The most common types of chords in Western Classical Music are triads and septachords. These are chords that are constructed by notes where the distance between the notes is that of a (major or minor) third. A triad consists of 3 notes (so two (2) third intervals), while a septachord consists of 4 notes (so three (3) third intervals). <br></br>
             Chords can appear in any note order. When the chord appears in an order other than its base position (stacked thirds), it is known as an "inversion".
         </p>
+        <div id="choiceL1">
         <h3 className ="titleL">What would you like to learn about?</h3>
         <button className ="btn-hover colorTriads" onClick={tri}>3-note chords ("Triads")</button>
         <button className ="btn-hover colorSept " onClick={sept}>4-note chords ("Septachords")</button>
         <Link to="/theory/chords"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        </div>
         </>
         :
         buttons.q1===true && buttons.septa===false && buttons.triads===true && buttons.inversions===false?
         <>
-
+    
+        <br />
+        <br />
+        
         <h1 className ="titleL">Triads</h1>
+        
         <p className ="infoL">At the most basic level, a triad is a collection of 3 notes, where the interval space between each pair of notes is a (major or minor) third. To simplify this concept, consider the order of notes: C, D, E, F, G, A, B, C. for a triad to exist, the three notes must be 2 names apart from each other (C-->E, D-->F, etc.). <br></br>
         Those three notes can come in any order. The way they are ordered are called "inversions". (To learn about inversions, click the "inversions" button). When presented with a group of 3 notes, first see if you can stack them to form a simple (non inverted) triad. 
         <br></br>For now disregard any "#" and "b" signs: only stack them by note names. Also note that any number of the 3 notes may be repeated: in music theory, there is no difference between [C,E,G] to [C,E,G,C,G]: they are both considered a triad and the same to one another.</p>
@@ -141,20 +147,26 @@ const Learn =()=> {
         <br></br>That means that the interval content of a triad can be one of these 4 options (where the first letter is the bottom interval): MM, Mm, mM, mm. Each of those permutations has a name in music theory: Mm: a Major chord, mM: a Minor chord, MM: an Augmented chord, mm: a Diminished chord. All of these names also have an accepted shorthand: Major: M, Minor: m, Augmented: Aug. (or +) , Diminished: Dim. (or o)</p>
         <p className ="infoL">An interesting by-product of how triads are created, by stacking 2 thirds, there is also a fifth interval created - from the lowest to the highest note. In M and m chords, the fifth is perfect. <br></br>
         In Dim chords the fifth is diminished (also known as a "tritone"), and in Aug chords the fifth is augmented. This fifth interval helps create the unique sound of each of the triads. For an example of how each of the 4 triads sounds, click the buttons below.</p>
-
-        <div className="sounds">
+        <div>
             <button className ="btn-hover color-1" onClick={playMaj}>Major (M)</button>
             <button className ="btn-hover color-3 " onClick={playmin}>Minor (m)</button>
             <button className ="btn-hover color-1" onClick={playAug}>Augmented (Aug)</button>
             <button className ="btn-hover color-3" onClick={playDim}>Diminished (Dim)</button>
-        </div>
-        <button className ="btn-hover colorInver " onClick={inv}>Inversions</button>
-        <button className ="btn-hover colorSept " onClick={sept}>Septachords</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+</div>
+
+
+      
+        <div>
+        <button className ="btn-hover colorInver "id="inverBtn" onClick={inv}>Inversions</button>
+        <button className ="btn-hover colorSept " id="septBtn" onClick={sept}>Septachords</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="homeBtn2"> HOME!</button></Link>
+       </div>
         </>
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===false?
         <>
+        <br />
+        <br />
         <h2 className ="titleL">Septachords</h2>
         <p className ="infoL">The name "septachords" comes from the word "septa", meaning seven. Septachords are identical to triads in how they operate, except that instead of three notes (two (2) third intervals stacked), they contain a fourth note that is a seventh distance (interval) from the root note - hence the name. </p>
         <p className ="infoL">Septachords are based on the four (4) triad types: Major, Minor, Augmented, Diminished. Each of these chords can have either a major, or minor, or sometimes diminished 7th interval added to them. </p>
@@ -178,14 +190,18 @@ const Learn =()=> {
             <button className ="btn-hover color-3" onClick={playhdim}>ø7</button>
             <button className ="btn-hover color-1" onClick={playdimdim}>o7</button>
         </div>  
-        <button className ="btn-hover colorInver " onClick={inv}>Inversions</button>
-        <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+<div>
+        <button className ="btn-hover colorInver " id="inverBtn3" onClick={inv}>Inversions</button>
+        <button className ="btn-hover colorTriads" id="triadsBtn3" onClick={tri}>Triads</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome  "id="homeBtn3"> HOME!</button></Link>
+       </div> 
         </>
         :
         buttons.q1===true && buttons.triads===false && buttons.septa===true && buttons.inversions===true?
         <>
-        <h2 className ="titleL">Septa Inversions</h2>
+        <br />
+        <br />
+        <h2 className ="titleL">Septachord Inversions</h2>
         <p className ="infoL">Inversions of septachords are identical in thoery to triad inversions: you take he basic chord, and change which of the notes is on the bottom. Just like triads, septachords are denoted with numbers by the name of the chord. Important to note that all of the septachords can be inverted.</p>
         <p className ="infoL">When the septachord appears with the root note in the lowest voice, it is called "root position". While technically not an inversion (as this is the natural way for the chord to appear), it is denoted with the number "7" next to the name of the chord (Major-Major7, minor-minor7, fully diminished7, etc.)</p>
         <p className ="infoL">The first inversion of a septachord is named "quint-sext". In this inversion we take the root note and move it up, so the second note becomes the bottom (C-E-G-B ----> E-G-B-C). Note that inverting a septachord (any inversion) creates a (major/minor) second interval somewhere in the chord. The name of the inversion marks that second interval in relation to the lowest note of the inversion - so in the case of a quint-sextachord, the pair of notes creating the second interval are a fifth and a sixth (5,6) interval from the bass note.</p>
@@ -217,13 +233,17 @@ const Learn =()=> {
             <button className ="btn-hover color-3" onClick={playDim34}>o4/3</button>
             <button className ="btn-hover color-1" onClick={playDim2}>o2</button>
             
-        </div> 
-        <button className ="btn-hover colorTriads" onClick={tri}>Triads</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        <button className ="btn-hover colorTriads" id="triadsBtn4" onClick={tri}>Triads</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="homeBtn4"> HOME!</button></Link>
+        </div>
+        
+        
         </>
         :
         buttons.q1===true && buttons.triads===true && buttons.septa===false && buttons.inversions===true?
         <>
+        <br />
+        <br />
         <h2 className ="titleL">Triad Inversions</h2>
         <p className ="infoL">The idea behind inversions is that the chords (triads, septachords, etc.) sound differently if the order of notes is changed.</p>
         <p className ="infoL">As a triad has three (3) notes, there are three ways in which they can be ordered. The root position (sometimes referred to as "base" position, or not given a name (for example when you encounter the term "major triad/chord" it means root form)).<br></br>
@@ -251,9 +271,10 @@ const Learn =()=> {
             <button className ="btn-hover color-3 " onClick={playDim46}>Diminished triad, 2nd inversion (Dim6/4)</button>
 
 
+        <button className ="btn-hover colorSept" id="septBtn5" onClick={sept}>Septachords</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="homeBtn5"> HOME!</button></Link>
         </div>
-        <button className ="btn-hover colorSept" onClick={sept}>Septachords</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        
         </>
         :
         <>
