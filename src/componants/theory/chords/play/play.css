@@ -55,3 +55,14 @@
     background-image: linear-gradient(to right, #667eea, #a24b8f, #6B8DD6, #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
+
+#playChoice {
+    position: absolute;
+    top:100px;
+    left:15%;
+}
+
+#playChoiceHome{
+    position: relative;
+    left:0;
+}

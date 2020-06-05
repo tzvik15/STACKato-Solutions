@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
-// import "./soundPlay.css";
+ import "./soundPlay.css";
 
 import useSound from "use-sound";
 
@@ -431,15 +431,20 @@ const SoundPlay = () => {
 
   return difficulty.dif === "" ? (
     <>
+  <div id="soundPlaySelect">
       <h4 className ="title">Please select the difficulty level</h4>
+      <div id="difBtn">
       <button className ="btn-hover color-2" onClick={easy}>Easy</button>
       <button className ="btn-hover color-6" onClick={medium}>Intermediate</button>
       <button className ="btn-hover color-8" onClick={advanced}>Hard</button>
       <button className ="btn-hover color-7" onClick={hard}>Expert</button>
-      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+      <Link to="/"><button className ="btn-hover colorHome" id="difBtnHome"> HOME!</button></Link>
+    </div>
+    </div>
     </>
   ) : difficulty === "easy" ? (
     <>
+    <br />
       <p className ="info"> 
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
@@ -448,16 +453,20 @@ const SoundPlay = () => {
         the chord will remain the same.
       </p>
       <button className="jellyS" onClick={eRand.rand1}>SOUND</button>
+      <div id="playEasyOptions">
       <h4 className ="info">options</h4>
       <button className="easyB major" onClick={selected1}>Major</button>
       <button className="easyB minor" onClick={selected1}>Minor</button>
       <button className="easyB diminished" onClick={selected1}>Diminished</button>
       <button className="easyB augmented" onClick={selected1}>Augmented</button>
+     </div>
       <div>
         <h1 className="text">Correct Answers: {count.yes}</h1>
         <h1 className="text">Incorrect Answers: {count.no}</h1>
+
+      <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="playEzHome"> HOME!</button></Link>
+    
       </div>
-      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
     </>
   ) : difficulty === "medium" ? (
     <>
