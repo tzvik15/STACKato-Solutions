@@ -21,6 +21,7 @@ html{
 }
 
 .noteBtn{
+    /* position: relative; */
     max-width: 100px;
     max-height: 90px;
     
@@ -80,3 +81,123 @@ html{
     height: 390px;
     width: 105px;
 }
+
+#buildFirstChoice{
+    position: absolute;
+    top:30px;
+}
+
+#buildChoice{
+    position: relative;
+    top:150px;
+}
+
+#build1Btn{
+    position: relative;
+    top:-300px;
+    left:5%;
+}
+
+#build1Home{
+    position: relative;
+    top:80px;
+    left:-24%;
+
+}
+
+#inversionDivAll{
+    position: absolute;
+    top:40px;
+}
+
+#buildInvEnd{
+    position: relative;
+   
+}
+
+#invMapBtn{
+    position: relative;
+    top:-120px;
+}
+
+#testInvDiv{
+    position: relative;
+    top:-100px;
+}
+
+#someId{
+    position: relative;
+    top:-40px;
+}
+
+#incomChordPic{
+    position: relative;
+    top:-20px;
+    left:-13%;
+}
+
+#mapBtns{
+    position: relative;
+    top:-40px;
+}
+
+#buildInvYes{
+    position: relative;
+    top:-70px;
+    left:-200px;
+}
+
+#buildInvNo{
+    position: relative;
+    top:-145px;
+    left:200px;
+}
+
+#buildInvHome{
+    position: relative;
+    top:-180px;
+    left:0;
+
+}
+
+#missingInvPic{
+    position: relative;
+    top:-70px;
+}
+
+#buildRTitle{
+    position: absolute;
+    top:30px;
+    left:35%;
+}
+
+#buildRDirect{
+    position: relative;
+    top:70px;
+}
+
+#buildRBtns{
+    position: relative;
+    top:-50px;
+}
+
+#buildRMapBtn{
+    position: relative;
+    top:-90px;
+}
+
+#buildRDirections{
+    position: relative;
+    top:-30px;
+}
+
+#buildREnd{
+    position: relative;
+    top:-100px;
+}
+
+#buildRHome{
+    position: relative;
+    left:0;
+}
+

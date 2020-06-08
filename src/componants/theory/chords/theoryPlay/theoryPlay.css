@@ -48,3 +48,15 @@
     background-image: linear-gradient(to right, #c4c007, #530b44, rgb(211, 168, 49), #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
+
+#theoryPlayChoice{
+    position: absolute;
+    top:180px;
+    left:35%;
+}
+
+#theoryPlayChoiceHome{
+    position: relative;
+    left:-50%;
+    top:100px;
+}

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-// import "./theoryPlay.css";
+ import "./theoryPlay.css";
 import Build from "../build/Build"
 import Recognize from "../recognize/Recognize"
 
@@ -23,10 +23,12 @@ const TheoryPlay=()=> {
     return (
         build===false && rec===false?
         <>
-    <h4 className ="info">Would you like to practice building chords, or recognizing chords?</h4>
+    <h4 className ="infoS">Would you like to practice building chords, or recognizing chords?</h4>
+        <div id="theoryPlayChoice">
         <button className ="btn-hover colorBuild" onClick={builder}>Build</button>
         <button className ="btn-hover colorRecognize" onClick={recognizer}>Recognize</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="theoryPlayChoiceHome"> HOME!</button></Link>
+        </div>
         </>
         : build===true?
         <>
