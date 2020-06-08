@@ -5,7 +5,7 @@ import Navbar from "./componants/navbar/navbar";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Portfolio from "./pages/portfolio"
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {HashRouter, BrowserRouter as Router, Route } from "react-router-dom";
 import Bonez from "./pages/bonez";
 import Bassoon from "./pages/bassoon";
 import Burger from "./pages/burger";
@@ -23,7 +23,7 @@ import PlayChords from "./componants/theory/chords/play/Play"
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename='/'>
       
         <body className="body">
           <div className="content">
@@ -50,7 +50,7 @@ function App() {
 		 	    <Route exact path="/Theory/chords/play" component={PlayChords} />
         </body>
       
-    </Router>
+    </HashRouter>
   );
 }
 
