@@ -1,5 +1,5 @@
 
-.title{
+.titleS{
     color: rgb(2, 2, 2);
 	font-size: 40px;
 	-webkit-text-stroke-width: 2.5px;
@@ -8,7 +8,7 @@
 
 
 /* BUTTON'S FOR LEVEL PAGE */
-.button{
+.buttonS{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     text-align: center
 }
 
-.btn-hover {
+.btn-hoverS {
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -35,7 +35,7 @@
     position: relative;
 }
 
-.btn-hover:hover {
+.btn-hoverS:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -43,29 +43,29 @@
     transition: all .4s ease-in-out;
 }
 
-.btn-hover:focus {
-    outline: none;
+.btn-hoverS:focus {
+    outFe: none;
 }
 
-.btn-hover.color-2 {
+.btn-hoverS.color-2 {
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 
-.btn-hover.color-6 {
+.btn-hoverS.color-6 {
     background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
     box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
-.btn-hover.color-7 {
+.btn-hoverS.color-7 {
     background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
-.btn-hover.color-8 {
+.btn-hoverS.color-8 {
     background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 /* SOUND BUTTON  */
-.jellyS {
+.jelly {
   cursor: pointer;
   max-width: 400px;
   left:37%;
@@ -83,7 +83,7 @@
 							0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
 }
 
-.jellyS span {
+.jelly span {
 	color: transparent;
 	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
 	-webkit-background-clip: text;
@@ -91,7 +91,7 @@
 	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
 }
 
-.jellyS::before {
+.jelly::before {
 	content: "";
 	display: block;
 	height: 0.25rem;
@@ -106,7 +106,7 @@
 	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
 }
 
-.jellyS::after {
+.jelly::after {
 	content: "";
 	display: block;
 	height: 0.25rem;
@@ -124,13 +124,13 @@
 
 /*  EASY PAGE*/
 
-.info {
+.infoS {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 35px;
     color: white;
     
 }
-.text{
+.text1S{
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 35px;
     color: rgb(0, 0, 0);
@@ -138,7 +138,7 @@
 	-webkit-text-stroke-color: rgb(241, 22, 168); 
 }
 
-.container {
+.containerS {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +183,7 @@
 
 
   /* MEDIUM BUTTON'S */
-  .table{
+  .tableS{
       align: center;
 
   }
@@ -223,7 +223,7 @@
 
   /* ADVANCED BUTTONS */
 
-.table{
+.tableS{
       align: center;
 
   }
@@ -267,7 +267,7 @@
 
   /* HARD BUTTONS */
 
-.table{
+.tableS{
     align: center;
 
 }
@@ -346,4 +346,63 @@
   top:0px;
   left:0;
   
+}
+
+#medP{
+  position: relative;
+  top:-80px;
+}
+
+#soundBtnMed{
+  position: relative;
+  left:35%;
+  top:300px;
+}
+
+.th{
+  color:rgb(238, 255, 0);
+  text-decoration: bald;
+  font-size:large;
+}
+
+#medTable{
+  position: relative;
+  left:0;
+  top:-20px;
+}
+
+#optionsMed{
+  position: relative;
+  top:50px;
+  left:-25px;
+}
+
+#endDivMed{
+  position: relative;
+  top:400px;
+  color:red;
+}
+
+#medYes{
+position: relative;
+left:-250px;
+top:65px;
+}
+
+#medNo{
+position: relative;
+top:0;
+left:130px;
+}
+
+#medHome{
+position: absolute;
+left:40%;
+top:100px;
+
+}
+
+#testMed{
+  position: relative;
+  top:-100px;
 }
