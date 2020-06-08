@@ -483,9 +483,9 @@ const SoundPlay = () => {
           Augmented
         </button>
       </div>
-      <div>
-        <h1 className="text">Correct Answers: {count.yes}</h1>
-        <h1 className="text">Incorrect Answers: {count.no}</h1>
+      <div className="infoOtherChords">
+        <h1 className="text1">Correct Answers: {count.yes}</h1>
+        <h1 className="text1">Incorrect Answers: {count.no}</h1>
 
         <Link to="/theory/chords">
           <button className="btn-hover colorHome  " id="playEzHome">
@@ -513,7 +513,7 @@ const SoundPlay = () => {
           <h4 className="infoS" id="optionsMed">
             options
           </h4>
-          <div id="endDivMed">
+          <div id="endDivMed" >
             <h1 className="text1" id="medYes">Correct Answers: {count.yes}</h1>
             <h1 className="text1" id="medNo">Incorrect Answers: {count.no}</h1>
 
@@ -605,16 +605,17 @@ const SoundPlay = () => {
     </>
   ) : difficulty === "advanced" ? (
     <>
-      <p className="infoS">
+      <p className="infoS" id="textHard">
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard.If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button className="jellyS" onClick={aRand.rand3}>
+      <button className="jelly" onClick={aRand.rand3} id="soundHard">
         SOUND
       </button>
+<div>
       <h4 className="infoS">options</h4>
       <button className="advancedB majorMajor" onClick={selected3}>
         Major Major
@@ -631,33 +632,34 @@ const SoundPlay = () => {
       <button className="advancedB fullyDiminished" onClick={selected3}>
         Fully Diminished
       </button>
-      <div>
+      </div>
+      <div id="endDivHard" className="infoOtherChords">
         <h1 className="text1">Correct Answers: {count.yes}</h1>
         <h1 className="text1">Incorrect Answers: {count.no}</h1>
-      </div>
-      <Link to="/">
-        <button className="btn-hover colorHome  "> HOME!</button>
+      <Link to="/theory/chords">
+        <button className="btn-hover colorHome  " id="hardHome"> HOME!</button>
       </Link>
+      </div>
     </>
   ) : difficulty === "hard" ? (
     <>
-      <p className="infoS">
+      <p className="infoS" id="textAdvanced">
         Please click the "SOUND" button to play sound. You may click it as many
         times as you like. Once you are ready, click the button corresponding to
         the chord you heard. If your answer is correct, a new chord will be
         played when you click the "SOUND" button. If your answer is incorrect,
         the chord will remain the same.
       </p>
-      <button className="jellyS" onClick={hRand.rand4}>
+      <button className="jelly" onClick={hRand.rand4} id="soundAdvanced">
         SOUND
       </button>
       <h4 className="infoS">options</h4>
       <table>
         <tr className="tableS">
-          <th>Root position</th>
-          <th>1st inversion</th>
-          <th>2nd inversion</th>
-          <th>3rd inversion</th>
+          <th className="th">Root position</th>
+          <th className="th">1st inversion</th>
+          <th className="th">2nd inversion</th>
+          <th className="th">3rd inversion</th>
         </tr>
         {/* group1 */}
         <tr>
@@ -863,13 +865,13 @@ const SoundPlay = () => {
         </tr>
       </table>
 
-      <div>
+      <div className="infoOtherChords">
         <h1 className="text1">Correct Answers: {count.yes}</h1>
         <h1 className="text1">Incorrect Answers: {count.no}</h1>
-      </div>
-      <Link to="/">
-        <button className="btn-hover colorHome  "> HOME!</button>
+      <Link to="/theory/chords">
+        <button className="btn-hover colorHome  " id="advHome"> HOME!</button>
       </Link>
+      </div>
     </>
   ) : (
     <>

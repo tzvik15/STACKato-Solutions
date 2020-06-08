@@ -380,19 +380,20 @@
 #endDivMed{
   position: relative;
   top:400px;
-  color:red;
+  font-family: 'Bubblegum Sans', cursive;
+    color: rgb(248, 3, 146)
 }
 
 #medYes{
 position: relative;
-left:-250px;
+left:-220px;
 top:65px;
 }
 
 #medNo{
 position: relative;
 top:0;
-left:130px;
+left:170px;
 }
 
 #medHome{
@@ -405,4 +406,40 @@ top:100px;
 #testMed{
   position: relative;
   top:-100px;
+}
+
+#textHard{
+  position: relative;
+  top:50px;
+}
+
+#soundHard{
+  position: relative;
+  top:50px;
+}
+
+#hardHome{
+  position: relative;
+  left:0;
+}
+
+.infoOtherChords{
+  font-family: 'Bubblegum Sans', cursive;
+font-size: 25px;
+  color: rgb(248, 3, 146)
+}
+
+#textAdvanced{
+  position: relative;
+  top:50px;
+}
+
+#soundAdvanced{
+  position: relative;
+  top:50px;
+}
+
+#advHome{
+  position: relative;
+  left:0;
 }
