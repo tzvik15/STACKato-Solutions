@@ -69,7 +69,7 @@ function About() {
             be seen in my "Bone'z Beatz" project, where I used JS to connect
             dynamically between sound files and key strokes, creating a fully
             custumizable soundboard application. (more about this project{" "}
-            <Link to="/bonez">HERE</Link>)
+            <Link to="/bonez" className="hereLink">HERE</Link>)
           </p>
           <p className="break" id="pSix">
             As my client, I will work together with you, collaborating to
@@ -84,6 +84,7 @@ function About() {
               href="https://github.com/tzvik15"
               target="_blank"
               rel="noopener noreferrer"
+              className="hereLink"
             >
               THIS
             </a>{" "}
@@ -92,6 +93,7 @@ function About() {
               href="https://www.linkedin.com/in/daniel-nester-aa074a189/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hereLink"
             >
               THIS
             </a>{" "}
@@ -101,13 +103,14 @@ function About() {
               download
               target="_blank"
               rel="noopener noreferrer"
+              className="hereLink"
             >
               HERE
             </a>{" "}
             you can download my resume. For my technical skills and
             proficiencies, click{" "}
             {/* eslint-disable-next-line */}
-            <a id="techModal" onClick={modeFun1}>
+            <a id="techModal" onClick={modeFun1} className="hereLink">
               HERE.
             </a>
           </p>
@@ -126,11 +129,11 @@ function About() {
                 Development with Jest, mySQL, Object Oriented Programming,
                 MongoDB and Mongoose, PWA creation (including offline support){" "}
                 <br />
-                <h3>In Development:</h3> Python <br />
+                <h3>In Development:</h3> ServiceNow <br />
               </p>
               <p>
                 To see these skills in use, please click{" "}
-                <Link to="/portfolio">HERE</Link>.
+                <Link to="/portfolio" className="hereLink">HERE</Link>.
               </p>
                
             </div>
