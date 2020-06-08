@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-// import "./septachords.css";
+ import "./septachords.css";
 import {Link} from "react-router-dom";
 
 import MM from "../assets/images/MM7.jpg";
@@ -179,32 +179,36 @@ const Septachords =()=>{
     return (
         start===false?
         <>
-        <h2 className = "title">Septachord Recognition</h2>
-        <p className ="info" >In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
-        <h4 className ="infoOther">Ready?</h4>
-        <button className ="btn-hover colorReady" onClick={go}>READY</button>
-        <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+        <div id="preSeptRec">
+        <h2 className = "title" id="preSeptRecTitle">Septachord Recognition</h2>
+        <div id="preSeptQuest">
+        <p className ="infoS" >In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
+        <h4 className ="infoOtherChords">Ready?</h4>
+        <button className ="btn-hover colorReady" id="preSeptRdy"onClick={go}>READY</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome" id="preSeptHome"> HOME!</button></Link>
+        </div>
+        </div>
         </>
         :
         <>
-        <h4 className ="info">What chord is this?</h4>
+        <h4 className ="infoS down30">What chord is this?</h4>
         <div>
-        <img src={item.pic} alt={"a chord"}></img>
+        <img src={item.pic} alt={"a chord"} id="septRecPic"></img>
         </div>
         <br/>
         <br/>
-        <div>
+        <div id="btnSeptMapDiv">
         {
                 imageArr.map(item => (
                     <button onClick={selected} className={item.class}>{item.name}</button>
                 ))
             }
             </div>
-            <div>
-        <h1 className="text">Correct Answers: {count.yes}</h1>
-        <h1 className="text">Incorrect Answers: {count.no}</h1>
+            <div id="septRecEnd">
+        <h1 className="textS" id="septRecYes">Correct Answers: {count.yes}</h1>
+        <h1 className="textS" id="septRecNo">Incorrect Answers: {count.no}</h1>
       </div>
-      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+      <Link to="/theory/chords"><button className ="btn-hover colorHome" id="septRecHome"> HOME!</button></Link>
         </>
     )
 }

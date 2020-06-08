@@ -14,3 +14,64 @@ border-radius: 10px;
 .hardB:hover {
 background-position: right center; /* change the direction of the change here */
 }
+
+#preSeptRecTitle{
+    position: absolute;
+    top:30px;
+    left:35%;
+}
+
+#preSeptQuest{
+    position: relative;
+    top:100px;
+}
+
+#preSeptRdy{
+position: relative;
+top:-50px;
+}
+
+#preSeptHome{
+    position: relative;
+    left:0;
+    top:-50px;
+}
+
+#septRecEnd{
+    position: relative;
+    top:-40px;
+}
+
+#septRecYes{
+position: relative;
+top:120px;
+left:-10%;
+font-family: 'Bubblegum Sans', cursive;
+	font-size: 25px;
+    color: rgb(248, 3, 146)
+}
+
+#septRecNo{
+  position: relative; 
+  top:70px;
+  left:10%;
+  font-family: 'Bubblegum Sans', cursive;
+	font-size: 25px;
+    color: rgb(248, 3, 146) 
+}
+
+#septRecHome{
+  position: relative; 
+  left:0; 
+  top:0px;
+}
+
+#septRecPic{
+    position: relative;
+    top:140px;
+}
+
+#btnSeptMapDiv{
+    position: relative;
+    top:100px;
+}

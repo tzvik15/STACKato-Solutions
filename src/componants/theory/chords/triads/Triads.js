@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-// import "./triads.css";
+ import "./triads.css";
 import {Link} from "react-router-dom";
 
 import M from "../assets/images/M.jpg";
@@ -129,17 +129,22 @@ const Triads =()=>{
     return (
         start===false?
         <>
-        <h2 className ="title">Triad Recognition</h2>
-        <p className ="info">In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
-        <h4 className ="infoOther">Ready?</h4>
-        <button className ="btn-hover colorReady" onClick={go}>READY</button>
-        <Link to="/"><button className ="btn-hover colorHome"> HOME!</button></Link>
+    <div id="preTriRec">
+        <h2 className ="title" id="preTreRecTitle">Triad Recognition</h2>
+        <div id="preTreQuest">
+        <p className ="infoS">In this section, you will be presented with a picture of a chord, and your job is to recognize what chord (and inversion) it is.</p>
+        <h4 className ="infoOtherChords">Ready?</h4>
+        <button className ="btn-hover colorReady" id="preTriRdy"onClick={go}>READY</button>
+        <Link to="/theory/chords"><button className ="btn-hover colorHome" id="preTriHome"> HOME!</button></Link>
+        </div>
+        </div>
         </>
         :
         <>
-        <h4 className ="info">What chord is this?</h4>
+
+        <h4 className ="infoS down30">What chord is this?</h4>
         <div>
-        <img src={item.pic} alt={"a chord"}></img>
+        <img src={item.pic} alt={"a chord"} id="triRecPic"></img>
         </div>
         <br/>
         <br/>
@@ -149,12 +154,13 @@ const Triads =()=>{
                     <button onClick={selected} className={item.class}>{item.name}</button>
                 ))
             }
-            </div>
-            <div>
-        <h1 className="text">Correct Answers: {count.yes}</h1>
-        <h1 className="text">Incorrect Answers: {count.no}</h1>
+            <div id="triRecEnd">
+        <h1 className="textS" id="triRecYes">Correct Answers: {count.yes}</h1>
+        <h1 className="textS" id="triRecNo">Incorrect Answers: {count.no}</h1>
+      <Link to="/theory/chords"><button className ="btn-hover colorHome  " id="triRecHome"> HOME!</button></Link>
       </div>
-      <Link to="/"><button className ="btn-hover colorHome  "> HOME!</button></Link>
+            </div>
+        
         </>
     )
 }
