@@ -39,50 +39,51 @@ function About() {
         </h2>
         <img src={good} alt="picMe" id="mepic" />
         <p className="break" id="pOne">
-          test Hello everyone, and thank you for visiting my developer site! In this
+          Hello everyone, and thank you for visiting my developer site! In this
           section I will tell you a little about myself, my history, and the
           work I've done and hoping to do.
         </p>
         <p className="break" id="pTwo">
-          Let's start with the basics of my background. My formal studies were
-          in the fields of music and education (I have a doctorate in
-          performance and pedagogy!) I grew up in Israel, where I did my
-          undergrad, and later moved to Los Angeles and finally to Colorado for
-          my graduate work.
+          Let's start with the basics of my background. My formal studies
+          started in the fields of music and education (I have a doctorate in
+          performance and pedagogy!) I grew up in Israel, and later moved to Los
+          Angeles, Colorado, and finally to North Carolina where I now live.
         </p>
         <p className="break" id="pThree">
-          It was here in Colorado that I learned how important collaboration is
-          to me. In fact, the concept is so meaningful for me that I wrote my
+          It was in Colorado that I learned how important collaboration is to
+          me. In fact, the concept is so meaningful for me that I wrote my
           doctoral thesis on the subject!
         </p>
         <br />
         <p className="break" id="pFour">
           I took my first steps as a developer at the University of Denver,
-          where I immedietly began encorporating my thoughts and ideas on
+          where I immedietly began incorporating my thoughts and ideas on
           collaborative work into my studies, collaborating on projects, and
           working with my cohort members to help and support each other in our
           journey as developers.
         </p>
         <p className="break" id="pFive">
-          As a developer, I am passionate about using JavaScript to find
-          creative solutions to coding challenges. An example of my JS can be
-          seen in my "Bone'z Beatz" project, where I used JS to connect
-          dynamically between sound files and key strokes, creating a fully
-          custumizable soundboard application. (more about this project{" "}
+        In North Carolina I combined my passion for collaboration with my
+          skills as a deveoper in my position as a ServiceNow Business
+          Analyst/Developer, working to provide value to the University of North
+          Carolina at Chapel Hill. It is in NC that I also completed my career
+          transition by attaining a Bachelor's degree in Computer Science.
+          
+        </p>
+        <p className="break" id="pSix">
+        As a developer, I am passionate about finding creative solutions to
+          coding challenges. An example of this can be seen in my "Bone'z Beatz"
+          project, where I used JavaScript to connect dynamically between sound
+          files and key strokes, creating a fully custumizable soundboard
+          application. (more about this project{" "}
           <Link to="/bonez" className="hereLink">
             HERE
           </Link>
           )
         </p>
-        <p className="break" id="pSix">
-          As my client, I will work together with you, collaborating to realize
-          the projects you envision, providing you with the best quality and
-          support, and the knowledge that the final product will truely be a
-          part and representation of YOU and YOUR needs.
-        </p>
         <p className="break" id="pSeven">
           You can see examples of my projects in the{" "}
-          <Link to="/portfolio">PORTFOLIO</Link> section.{" "}
+          <Link to="/portfolio" className="hereLink">PORTFOLIO</Link> section.{" "}
           <a
             href="https://github.com/tzvik15"
             target="_blank"
@@ -120,17 +121,14 @@ function About() {
           <div className="modal-content">
             <span className="close-btn">&times;</span>
             <p>
-              <h3>Programing Languages Known:</h3> HTML 5, CSS, JavaScript (ES6){" "}
+              <h3>Programing Languages:</h3> Java (Swing, AWT), Python
+              (Pandas, Numpy, Matplotlib, Flask), JavaScript (ES6, bootstrap,
+              React, Node.js, Express, Handlebars, Sequelize, jQuery,
+              socket.io), HTML 5, CSS <br />
+              <h3>Databases:</h3>ServiceNow, Oracle, mySQL, mongoDB{" "}
               <br />
-              <h3>Front End:</h3>React.js (including hooks), REST API queries,
-              3rd party JS and CSS library integration, deployment of web pages{" "}
-              <br />
-              <h3>Back End: </h3>Node.js, Express servers, REST API creation,
-              NPM, Handlebars, Sequelize <br />
-              <h3>Cross Stack: </h3>MERN stack, jQuery, Test Driven Development
-              with Jest, mySQL, Object Oriented Programming, MongoDB and
-              Mongoose, PWA creation (including offline support) <br />
-              <h3>In Development:</h3> ServiceNow <br />
+              <h3>Design Models: </h3>UML Class Diagrams, ERD Diagrams, Software Engineering Documents (SDP, SRS, SDD, STS)  <br />
+              <h3>Currently workin on:</h3> Finihing up my studies (expected gradtuation December 2022) <br />
             </p>
             <p>
               To see these skills in use, please click{" "}
